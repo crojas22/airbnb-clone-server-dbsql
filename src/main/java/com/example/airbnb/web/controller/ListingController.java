@@ -26,7 +26,7 @@ public class ListingController {
         this.experienceService = experienceService;
     }
 
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    @RequestMapping(value = "/homepage", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getHomeData() {
         Map<String, Object> responseBody = new HashMap<>();
         try {
