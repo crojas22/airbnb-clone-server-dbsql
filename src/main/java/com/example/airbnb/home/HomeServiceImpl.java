@@ -1,6 +1,8 @@
 package com.example.airbnb.home;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -20,6 +22,11 @@ public class HomeServiceImpl implements HomeService {
 
     public Iterable<Home> getHomeListing() {
         return this.homesRepo.findAll();
+    }
+
+    @Override
+    public Page<Home> getPerPage(Pageable pageable) {
+        return this.homesRepo.findAll(pageable);
     }
 
     public Home getIndividualHome(Integer id) {

@@ -161,5 +161,144 @@ public class DatabaseLoader implements ApplicationRunner{
         String[] photoEx8 = {"/images/activity/activity4-2.jpeg", "/images/activity/activity4-height.jpeg"};
         experience8.setPhotos(Arrays.asList(photoEx8));
         this.experienceService.createExperience(experience8);
+
+        ////////////////////
+
+
+        Home home9 = new Home(
+                "Orlando", "Florida", "United States", "Loft Studio in the Central Area",
+                "Entire Apartment", "Apartment", "Free cancellation", "per night" ,100, 3, 3, 2
+        );
+        String[] photos9 = {"/images/homes/home1.jpeg", "/images/homes/home1-2.jpeg"};
+        home9.setPhotos(Arrays.asList(photos9));
+        this.homesService.createHomeListing(home9);
+
+        Home home10 = new Home(
+                "Trenton", "New Jersey", "United States", "In the historical center of New York",
+                "Entire House","House","Free cancellation","per night",200, 1, 1, 1
+        );
+        String[] photos10 = {"/images/homes/home2-2.jpeg", "/images/homes/home2-1.jpeg"};
+        home10.setPhotos(Arrays.asList(photos10));
+        this.homesService.createHomeListing(home10);
+
+        Home home11 = new Home(
+                "Texas", "San Antonio", "United States", "Lorem ipsum dolor sit amet",
+                "Entire Condo","Condo", "Free cancellation","per night",50, 2, 6, 1
+        );
+        String[] photos11 = {"/images/homes/home3-2.jpeg", "/images/homes/home3-1.jpeg"};
+        home11.setPhotos(Arrays.asList(photos11));
+        this.homesService.createHomeListing(home11);
+
+        Home home12 = new Home(
+                "Portland", "Oregon", "United States", "Lorem ipsum dolor sit amet",
+                "Entire House", "House", "Free cancellation","per night",55, 4, 2, 2
+        );
+        String[] photos12 = {"/images/homes/home4-2.jpeg", "/images/homes/home4-1.jpeg"};
+        home12.setPhotos(Arrays.asList(photos12));
+        this.homesService.createHomeListing(home12);
+
+        Home home13 = new Home(
+                "Albuquerque", "New Mexico", "United States", "Lorem ipsum dolor sit amet",
+                "Private Room","Apartment", "Free cancellation","per night",35, 1, 1, 1
+        );
+        String[] photos13 = {"/images/homes/home3-1.jpeg", "/images/homes/home3-2.jpeg"};
+        home13.setPhotos(Arrays.asList(photos13));
+        this.homesService.createHomeListing(home13);
+
+        Home home14 = new Home(
+                "San Francisco", "California", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Private Room", "House","Free cancellation","per night",200, 1, 1, 1
+        );
+        String[] photos14 = {"/images/homes/home4-1.jpeg", "/images/homes/home4-2.jpeg"};
+        home14.setPhotos(Arrays.asList(photos14));
+        this.homesService.createHomeListing(home14);
+
+        Home home15 = new Home(
+                "West Palm Beach", "Florida", "United States", "Loft Studio in the Central Area",
+                "Entire Apartment","Apartment","Free cancellation","per night",150, 2, 1, 1
+        );
+        String[] photos15 = {"/images/homes/home1-2.jpeg", "/images/homes/home1.jpeg"};
+        home15.setPhotos(Arrays.asList(photos15));
+        this.homesService.createHomeListing(home15);
+
+        Home home16 = new Home(
+                "Philadelphia", "Pennsylvania", "United States", "In the historical center of New York",
+                "Entire Home","House","Free cancellation","per night",60, 3, 2, 2
+        );
+        String[] photos16 = {"/images/homes/home2-1.jpeg", "/images/homes/home2-2.jpeg"};
+        home16.setPhotos(Arrays.asList(photos16));
+        this.homesService.createHomeListing(home16);
+
+        Experience experience9 = new Experience(
+                "Orlando", "Florida", "United States", "Beach & Sport Bike & Hangout",
+                "Sports experience", "Orlando", "3", "English and Spanish",
+                "per person", 40
+        );
+        String[] photoEx9 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
+        experience9.setPhotos(Arrays.asList(photoEx9));
+        this.experienceService.createExperience(experience9);
+
+        Experience experience10 = new Experience(
+                "New Orleans", "Louisiana", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Sports experience", "New Orleans", "4", "English and French",
+                "per person", 20
+        );
+        String[] photoEx10 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
+        experience10.setPhotos(Arrays.asList(photoEx10));
+        this.experienceService.createExperience(experience10);
+
+        Experience experience11 = new Experience(
+                "Tucson", "Arizona", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Nature experience", "Tucson", "4", "English",
+                "per person", 80
+        );
+        String[] photoEx11 = {"/images/activity/activity1-2.jpeg", "/images/activity/activity1-height.jpeg"};
+        experience11.setPhotos(Arrays.asList(photoEx11));
+        this.experienceService.createExperience(experience11);
+
+        Experience experience12 = new Experience(
+                "Philadelphia", "Pennsylvania", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Nature experience", "Philadelphia", "5", "English and French",
+                "per person", 100
+        );
+        String[] photoEx12 = {"/images/activity/activity1-2.jpeg", "/images/activity/activity1-height.jpeg"};
+        experience12.setPhotos(Arrays.asList(photoEx12));
+        this.experienceService.createExperience(experience12);
+
+        Experience experience13 = new Experience(
+                "San Diego", "California", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Relaxation experience", "San Diego", "1", "English and Spanish",
+                "per person", 150
+        );
+        String[] photoEx13 = {"/images/activity/activity3-2.jpeg", "/images/activity/activity3-height.jpeg"};
+        experience13.setPhotos(Arrays.asList(photoEx13));
+        this.experienceService.createExperience(experience13);
+
+        Experience experience14 = new Experience(
+                "Boston", "Massachusetts", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Relaxation and exercise", "Boston", "1", "English and Spanish",
+                "per person", 150
+        );
+        String[] photoEx14 = {"/images/activity/activity3-2.jpeg", "/images/activity/activity3-height.jpeg"};
+        experience14.setPhotos(Arrays.asList(photoEx14));
+        this.experienceService.createExperience(experience14);
+
+        Experience experience15 = new Experience(
+                "Detroit", "Michigan", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Sport experience", "Detroit", "2", "English and Spanish",
+                "per person", 30
+        );
+        String[] photoEx15 = {"/images/activity/activity4-2.jpeg", "/images/activity/activity4-height.jpeg"};
+        experience15.setPhotos(Arrays.asList(photoEx15));
+        this.experienceService.createExperience(experience15);
+
+        Experience experience16 = new Experience(
+                "Miami", "Florida", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Sport experience", "Hialeah", "1", "English and Spanish",
+                "per person", 45
+        );
+        String[] photoEx16 = {"/images/activity/activity4-2.jpeg", "/images/activity/activity4-height.jpeg"};
+        experience16.setPhotos(Arrays.asList(photoEx16));
+        this.experienceService.createExperience(experience16);
     }
 }
