@@ -40,7 +40,7 @@ public class ListingController {
         }
     }
 
-    @RequestMapping(value = "/search/home", method = RequestMethod.GET)
+    @RequestMapping(value = "/search/homes", method = RequestMethod.GET)
     public ResponseEntity searchHomeData() {
         try {
             return new ResponseEntity<>(this.homeService.getPerPage(new PageRequest(0,12)), HttpStatus.OK);
