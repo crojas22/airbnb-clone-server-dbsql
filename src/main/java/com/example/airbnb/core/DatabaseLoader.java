@@ -59,7 +59,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home3);
 
         Home home6 = new Home(
-                "Texas", "Houston", "United States", "Lorem ipsum dolor sit amet",
+                "Texas", "Austin", "United States", "Lorem ipsum dolor sit amet",
                 "Private Room","Apartment", "Free cancellation","per night",35, 1, 1, 1
         );
         String[] photos6 = {"/images/homes/home3-1.jpeg", "/images/homes/home3-2.jpeg"};
@@ -67,7 +67,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home6);
 
         Home home7 = new Home(
-                "Seattle", "Washington", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Palo Alto", "California", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Private Room", "House","Free cancellation","per night",40, 1, 1, 1
         );
         String[] photos7 = {"/images/homes/home4-1.jpeg", "/images/homes/home4-2.jpeg"};
@@ -75,7 +75,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home7);
 
         Home home4 = new Home(
-                "Miami", "Florida", "United States", "Loft Studio in the Central Area",
+                "Tampa", "Florida", "United States", "Loft Studio in the Central Area",
                 "Entire Apartment","Apartment","Free cancellation","per night",45, 2, 1, 1
         );
         String[] photos4 = {"/images/homes/home1-2.jpeg", "/images/homes/home1.jpeg"};
@@ -83,7 +83,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home4);
 
         Home home5 = new Home(
-                "New York", "New York", "United States", "In the historical center of New York",
+                "Albany", "New York", "United States", "In the historical center of New York",
                 "Entire Home","House","Free cancellation","per night",60, 3, 3, 2
         );
         String[] photos5 = {"/images/homes/home2-1.jpeg", "/images/homes/home2-2.jpeg"};
@@ -154,7 +154,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience7);
 
         Experience experience8 = new Experience(
-                "Miami", "Florida", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Tampa", "Florida", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Sport experience", "Kendall", "1", "English and Spanish",
                 "per person", 45
         );
@@ -182,7 +182,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home10);
 
         Home home11 = new Home(
-                "Texas", "San Antonio", "United States", "Lorem ipsum dolor sit amet",
+                "San Antonio", "Texas", "United States", "Lorem ipsum dolor sit amet",
                 "Entire Condo","Condo", "Free cancellation","per night",50, 2, 6, 1
         );
         String[] photos11 = {"/images/homes/home3-2.jpeg", "/images/homes/home3-1.jpeg"};
@@ -206,7 +206,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home13);
 
         Home home14 = new Home(
-                "San Francisco", "California", "United States", "Lorem ipsum dolor sit amet dolor",
+                "San Diego", "California", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Private Room", "House","Free cancellation","per night",200, 1, 1, 1
         );
         String[] photos14 = {"/images/homes/home4-1.jpeg", "/images/homes/home4-2.jpeg"};
@@ -222,7 +222,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home15);
 
         Home home16 = new Home(
-                "Philadelphia", "Pennsylvania", "United States", "In the historical center of New York",
+                "New Orleans", "Louisiana", "United States", "In the historical center of New York",
                 "Entire Home","House","Free cancellation","per night",60, 3, 2, 2
         );
         String[] photos16 = {"/images/homes/home2-1.jpeg", "/images/homes/home2-2.jpeg"};
@@ -230,7 +230,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.homesService.createHomeListing(home16);
 
         Experience experience9 = new Experience(
-                "Orlando", "Florida", "United States", "Beach & Sport Bike & Hangout",
+                "Jacksonville", "Florida", "United States", "Beach & Sport Bike & Hangout",
                 "Sports experience", "Orlando", "3", "English and Spanish",
                 "per person", 40
         );
@@ -239,7 +239,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience9);
 
         Experience experience10 = new Experience(
-                "New Orleans", "Louisiana", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Philadelphia", "Pennsylvania", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Sports experience", "New Orleans", "4", "English and French",
                 "per person", 20
         );
@@ -257,7 +257,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience11);
 
         Experience experience12 = new Experience(
-                "Philadelphia", "Pennsylvania", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Las Vegas", "Nevada", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Nature experience", "Philadelphia", "5", "English and French",
                 "per person", 100
         );
@@ -266,7 +266,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience12);
 
         Experience experience13 = new Experience(
-                "San Diego", "California", "United States", "Lorem ipsum dolor sit amet dolor",
+                "San Francisco", "California", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Relaxation experience", "San Diego", "1", "English and Spanish",
                 "per person", 150
         );
@@ -293,7 +293,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience15);
 
         Experience experience16 = new Experience(
-                "Miami", "Florida", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Tallahassee", "Florida", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Sport experience", "Hialeah", "1", "English and Spanish",
                 "per person", 45
         );

@@ -1,5 +1,6 @@
 package com.example.airbnb.home;
 
+import com.example.airbnb.location.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -31,5 +32,14 @@ public class HomeServiceImpl implements HomeService {
 
     public Home getIndividualHome(Integer id) {
         return this.homesRepo.findOne(id) ;
+    }
+
+    @Override
+    public void addHomeLocation(Integer id,Location location) {
+        Home home = this.homesRepo.findOne(id);
+        if (home.getLocation() == null) {
+            home.setLocation(location);
+            this.homesRepo.save(home);
+        }
     }
 }

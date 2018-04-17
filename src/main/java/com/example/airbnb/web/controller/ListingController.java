@@ -2,14 +2,12 @@ package com.example.airbnb.web.controller;
 
 import com.example.airbnb.experience.ExperienceService;
 import com.example.airbnb.home.HomeService;
+import com.example.airbnb.location.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -60,6 +58,22 @@ public class ListingController {
         } catch (Exception e) {
             responseBody.put("error", e);
             return new ResponseEntity<>(responseBody, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @RequestMapping(value = "/home/location/{id}", method = RequestMethod.POST)
+    public ResponseEntity addHomeLocation(@PathVariable Integer id,
+                                          @RequestBody Location location) {
+        try {
+            this.homeService.addHomeLocation(id,location);
+            return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .build();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(e);
         }
     }
 

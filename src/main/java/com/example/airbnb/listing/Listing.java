@@ -1,5 +1,6 @@
 package com.example.airbnb.listing;
 
+import com.example.airbnb.location.Location;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,6 +22,10 @@ public abstract class Listing {
 
     @ElementCollection(fetch = FetchType.EAGER)
     private List<String> photos;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="location_id")
+    private Location location;
 
     {
         photos = new ArrayList<>();

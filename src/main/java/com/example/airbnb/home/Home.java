@@ -42,4 +42,6 @@ public class Home extends Listing{
         this.beds = beds;
         this.baths = baths;
     }
+
+
 }
