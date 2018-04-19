@@ -49,6 +49,17 @@ public class ListingController {
         }
     }
 
+    @RequestMapping(value = "/search/experiences", method = RequestMethod.GET)
+    public ResponseEntity searchExperienceData() {
+        try {
+            return new ResponseEntity<>(this.experienceService.getPerPage(new PageRequest(0,12)), HttpStatus.OK);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(e.getMessage());
+        }
+    }
+
     @RequestMapping(value = "/home/{id}", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getIndividualHome(@PathVariable Integer id) {
         Map<String, Object> responseBody = new HashMap<>();
@@ -66,6 +77,22 @@ public class ListingController {
                                           @RequestBody Location location) {
         try {
             this.homeService.addHomeLocation(id,location);
+            return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .build();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(e);
+        }
+    }
+
+    @RequestMapping(value = "/experience/location/{id}", method = RequestMethod.POST)
+    public ResponseEntity addExperienceLocation(@PathVariable Integer id,
+                                          @RequestBody Location location) {
+        try {
+            this.experienceService.addExperienceLocation(id,location);
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .build();

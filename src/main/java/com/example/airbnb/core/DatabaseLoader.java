@@ -90,24 +90,6 @@ public class DatabaseLoader implements ApplicationRunner{
         home5.setPhotos(Arrays.asList(photos5));
         this.homesService.createHomeListing(home5);
 
-        Experience experience = new Experience(
-                "Miami", "Florida", "United States", "Beach & Sport Bike & Hangout",
-                "Sports experience", "Miami Beach", "3", "English and Spanish",
-                "per person", 40
-        );
-        String[] photoEx1 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
-        experience.setPhotos(Arrays.asList(photoEx1));
-        this.experienceService.createExperience(experience);
-
-        Experience experience2 = new Experience(
-                "Atlanta", "Georgia", "United States", "Lorem ipsum dolor sit amet dolor",
-                "Sports experience", "Atlanta", "2", "English and Spanish",
-                "per person", 20
-        );
-        String[] photoEx2 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
-        experience2.setPhotos(Arrays.asList(photoEx2));
-        this.experienceService.createExperience(experience2);
-
         Experience experience3 = new Experience(
                 "Houston", "Texas", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Nature experience", "Houston", "4", "English",
@@ -116,6 +98,24 @@ public class DatabaseLoader implements ApplicationRunner{
         String[] photoEx3 = {"/images/activity/activity1-2.jpeg", "/images/activity/activity1-height.jpeg"};
         experience3.setPhotos(Arrays.asList(photoEx3));
         this.experienceService.createExperience(experience3);
+
+        Experience experience5 = new Experience(
+                "Los Angeles", "California", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Relaxation experience", "Hollywood", "1", "English and Spanish",
+                "per person", 150
+        );
+        String[] photoEx5 = {"/images/activity/activity3-2.jpeg", "/images/activity/activity3-height.jpeg"};
+        experience5.setPhotos(Arrays.asList(photoEx5));
+        this.experienceService.createExperience(experience5);
+
+        Experience experience = new Experience(
+                "Miami", "Florida", "United States", "Beach & Sport Bike & Hangout",
+                "Sports experience", "Miami Beach", "3", "English and Spanish",
+                "per person", 40
+        );
+        String[] photoEx1 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
+        experience.setPhotos(Arrays.asList(photoEx1));
+        this.experienceService.createExperience(experience);
 
         Experience experience4 = new Experience(
                 "Philadelphia", "Pennsylvania", "United States", "Lorem ipsum dolor sit amet dolor",
@@ -126,14 +126,14 @@ public class DatabaseLoader implements ApplicationRunner{
         experience4.setPhotos(Arrays.asList(photoEx4));
         this.experienceService.createExperience(experience4);
 
-        Experience experience5 = new Experience(
-                "Los Angeles", "California", "United States", "Lorem ipsum dolor sit amet dolor",
-                "Relaxation experience", "Hollywood", "1", "English and Spanish",
-                "per person", 150
+        Experience experience2 = new Experience(
+                "Atlanta", "Georgia", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Sports experience", "Atlanta", "2", "English and Spanish",
+                "per person", 20
         );
-        String[] photoEx5 = {"/images/activity/activity3-2.jpeg", "/images/activity/activity3-height.jpeg"};
-        experience5.setPhotos(Arrays.asList(photoEx5));
-        this.experienceService.createExperience(experience5);
+        String[] photoEx2 = {"/images/activity/activity0-2.jpeg", "/images/activity/activity0-height.jpeg"};
+        experience2.setPhotos(Arrays.asList(photoEx2));
+        this.experienceService.createExperience(experience2);
 
         Experience experience6 = new Experience(
                 "New York", "New York", "United States", "Lorem ipsum dolor sit amet dolor",
@@ -175,7 +175,7 @@ public class DatabaseLoader implements ApplicationRunner{
 
         Home home10 = new Home(
                 "Trenton", "New Jersey", "United States", "In the historical center of New York",
-                "Entire House","House","Free cancellation","per night",200, 1, 1, 1
+                "Entire House","House","Free cancellation","per night",120, 1, 1, 1
         );
         String[] photos10 = {"/images/homes/home2-2.jpeg", "/images/homes/home2-1.jpeg"};
         home10.setPhotos(Arrays.asList(photos10));
@@ -239,7 +239,7 @@ public class DatabaseLoader implements ApplicationRunner{
         this.experienceService.createExperience(experience9);
 
         Experience experience10 = new Experience(
-                "Philadelphia", "Pennsylvania", "United States", "Lorem ipsum dolor sit amet dolor",
+                "Denver", "Colorado", "United States", "Lorem ipsum dolor sit amet dolor",
                 "Sports experience", "New Orleans", "4", "English and French",
                 "per person", 20
         );

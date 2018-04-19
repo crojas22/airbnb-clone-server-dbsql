@@ -1,5 +1,7 @@
 package com.example.airbnb.experience;
 
+import com.example.airbnb.home.Home;
+import com.example.airbnb.location.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -32,5 +34,14 @@ public class ExperienceServiceImpl implements ExperienceService{
     @Override
     public Experience getIndividualExperience(Integer id) {
         return this.experienceRepo.findOne(id);
+    }
+
+    @Override
+    public void addExperienceLocation(Integer id,Location location) {
+        Experience experience = this.experienceRepo.findOne(id);
+        if (experience.getLocation() == null) {
+            experience.setLocation(location);
+            this.experienceRepo.save(experience);
+        }
     }
 }
